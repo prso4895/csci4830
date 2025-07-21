@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="keywords" content="accessibility, universal design,
+alternate format, web design, disability, higher education, ADA, Section 508,
+accommodations, assistive technology, DOJ, Department of Justice, WAI" />
+
+<title>AHG Presenter Proposal Form 2020</title>
+
+<link rel='stylesheet' id='Lora-css'  href='//fonts.googleapis.com/css?family=Lora%3A400%2C700&#038;ver=4.4.2' type='text/css' media='all' />
+<link rel="stylesheet" href="css/ahgformstyle2020after.css"  type="text/css" media="screen">
+
+
+</head>
+
+<body>
+
+<div id="content">
+    <div id="formheader">
+        <h1 id="formstart">AHG Presenter Proposal Form 2020</h1>
+        <p class="outline3">Accessing Higher Ground: Accessible Web, Media and Technology Conference November 16 - 20, 2020</p>
+    </div>
+
+    <h2 class="outline4">Speaker Information</h2>
+    <form action="AHG_saveprop2020.php" method="post" id="AHGproposalform2020">
+        <p class="sr-only">Fields marked with an asterisk (*) are required.</p>
+        <div class="speakerinfo">
+            <p><strong>1st Presenter*</strong><span class="required-indicator" aria-hidden="true">*</span></p>
+            <ul>
+                <li>
+                    <label for="fstspkr1">First Name:<span class="required-indicator" aria-hidden="true">*</span></label>
+                    <input id="fstspkr1" name="fstspkr1" type="text" required aria-required="true" />
+                </li>
+                <li>
+                    <label for="lstname1">Last Names:<span class="required-indicator" aria-hidden="true">*</span></label>
+                    <input id="lstname1" name="lstname1" type="text" required aria-required="true" />
+                </li>
+                <li>
+                    <label for="degree1">Highest Academic Degree:</label>
+                    <input id="degree1" name="degree1" type="text" required aria-required="true" />
+                </li>
+                <li>
+                    <label for="company1">Institution or Organization:</label>
+                    <input id="company1" name="company1" type="text" required aria-required="true" />
+                </li>
+                <li>
+                    <label for="telno1">Phone Number:</label>
+                    <input id="telno1" name="telno1" type="tel" required aria-required="true" />
+                </li>
+                <li>
+                    <label for="email1">e-mail:<span class="required-indicator" aria-hidden="true">*</span></label>
+                    <input id="email1" name="email1" type="text" required aria-required="true" />
+                </li>
+            </ul>
+
+            <fieldset class="spkrques">
+                <legend>Have you presented at a national conference or taught a college-level, semester-long course?<span class="required-indicator" aria-hidden="true">*</span></legend>
+                <div class="oneques">
+                    <span>
+                        <input value="1" id="natconfexp1_yes" name="natconfexp1" type="radio" required />
+                        <label for="natconfexp1_yes">yes</label>
+                    </span>
+                    <span>
+                        <input value="0" id="natconfexp1_no" name="natconfexp1" type="radio" required />
+                        <label for="natconfexp1_no">no</label>
+                    </span>
+                </div>
+            </fieldset>
+
+            <div class="suggest_form">
+                <label for="Speaker1bio">Presenter 1 bio (1500 characters maximum)</label>
+                <textarea id="Speaker1bio" name="Speaker1bio" cols="80" rows="4" maxlength="1500"></textarea>
+            </div>
+        </div>
+
+        <div class="formcol">
+            <div id="propinfo">
+                <h2 class="outline4">Proposal Information</h2>
+                <fieldset>
+                    <legend>Title of Proposal<span class="required-indicator" aria-hidden="true">*</span> (150 characters maximum)</legend>
+                    <ul>
+                        <li>
+                            <label for="proptitle">Proposal Title:<span class="required-indicator" aria-hidden="true">*</span></label>
+                            <input id="proptitle" name="proptitle" type="text" required maxlength="150" />
+                        </li>
+                    </ul>
+                </fieldset>
+            </div>
+            <input type="submit" value="Submit your proposal" />
+        </div>
+    </form>
+</div>
+</body>
+</html>
